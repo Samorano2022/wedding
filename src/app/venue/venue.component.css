@@ -141,6 +141,9 @@ p{
             border: none;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+        p{
+            font-size: 18px;
+        }
 }
 
 
