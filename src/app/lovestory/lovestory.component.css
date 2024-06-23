@@ -1,0 +1,165 @@
+.lovestory__section{
+    height: 100vh;
+    width: 100vw;
+    background: #040405;
+    padding: 80px 0;
+}
+.lovestory__body{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    overflow: hidden;
+}
+.chapter__body{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.lovestory__container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.first__chapter{
+display: grid;
+/* grid-template-columns: repeat(2, minmax(400px, 500px)); */
+grid-template-columns: 1fr 2fr; /* 2fr makes the first column bigger than the others */
+  gap: 10px;
+}
+.continuation{
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    color: #808080;
+    line-height: 168%;
+    text-align: justify;
+}
+.second__chapter{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    color: #808080;
+
+    line-height: 168%;
+    text-align: justify;
+}
+.third__chapter{
+background: #0e0516;
+padding: 12px 24px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+font-size: 17px;
+color: #808080;
+
+
+line-height: 168%;
+text-align: justify;
+border-left: 4px solid var(--purple);
+border-radius: 0px 12px 12px 0px;
+}
+a{
+    cursor: pointer;
+}
+h2{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    line-height: 118%;
+    text-align: justify;
+    color: #808080;
+
+    overflow: hidden;  
+}
+.title{
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #808080;
+
+}
+.back__btn{
+    color: var(--milk);
+    padding: 16px 16px;
+    border: 1px solid var(--milk);
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back__btn:hover{
+    color: var(--milk);
+    padding: 16px 16px;
+    border: 1px solid var(--purple);
+    width: fit-content;
+    border-radius: 8px;
+    background: var(--purple);
+}
+.back__btn img{
+    margin-right: 8px;
+ }
+
+
+/* Styles for Tablets */
+@media only screen and (max-width: 1024px) {
+    .lovestory__section{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .lovestory__section{
+        height: 100%;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .lovestory__section{
+        height: 100%;
+    }
+    .first__chapter{
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+    .first__chapter img{
+        width: 100%;
+    }
+    .back__btn{
+        padding: 12px 16px;
+    } 
+
+    h2{
+        font-size: 90px;
+        padding: 12px 0;
+        line-height: 98%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .colorcode__section{
+        height: 100%;
+    }
+h2{
+    font-size: 45px;
+    padding: 19px 0;
+    line-height: 98%;
+}
+}
+    

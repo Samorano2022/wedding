@@ -1,0 +1,47 @@
+.footer{
+    height: 30vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.rsvp{
+    color: var(--milk);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer__down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.reserved{
+    color: var(--milk);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 144%;
+
+}
+
+.footer__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}

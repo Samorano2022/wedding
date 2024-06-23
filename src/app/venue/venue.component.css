@@ -1,0 +1,146 @@
+
+.venue__section{
+    /* height: 20vh; */
+    /* background: var(--purplebg); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/venuebgg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.venue__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 80px 0;
+    height: 100%;
+}
+.hero__body{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero__btn{
+    width: 215px;
+    margin: auto;
+    border: 1.2px solid var(--purplebg);
+    color: var(--milk);
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background: var(--black);
+}
+.hero__btn:hover{
+    background: var(--purple);
+    color: var(--milk);
+    border: 1.2px solid var(--purple);
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 5ms ease-in-out;
+}
+p{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--milk);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    line-height: 158%;
+}
+
+.up, .mid, .bottom{
+    color: var(--milk);
+    font-size: 24px;
+
+}
+.herobody__mobile{
+    display: none;
+}
+
+/* Styles for Tablets */
+@media only screen and (max-width: 1024px) {
+    .venue__section{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .venue__section{
+        height: 100%;
+    }
+    p{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .venue__section{
+        height: 100%;
+    }
+    p{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .venue__section{
+        height: 100%;
+    }
+    .venue__container{
+        width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+    padding: 80px 0;
+    height: 100%;
+    }
+    .date{
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .time{
+        font-size: 40px;
+    }
+    .july{
+        font-size: 20px;
+    }
+    .mid img{
+        width: 100%;
+    }
+    .church{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .date__up{
+        display: flex;
+        gap: 9px;
+        /* flex-direction: row-reverse; */
+        align-items: center;
+        justify-content: center;
+        }
+        .hero__body{
+            padding: 24px 8px;
+            background: #270737;
+            border-radius: 16px;
+        }
+        .hero__btn{
+            background: var(--black);
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+}
+
+

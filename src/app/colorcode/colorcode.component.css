@@ -1,0 +1,140 @@
+.colorcode__section{
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+    background: url(../../assets/colorbgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 100% 100%;
+background-position: 0px 0px;
+background-image: linear-gradient(180deg, #030303 0%, #101010 100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+h2{
+    width: 550px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--milk);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    line-height: 150%;
+    padding-top: 49px;
+}
+.up{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--milk);
+    padding-bottom: 8px;
+}
+.colorcode__container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lilac{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    color: var(--black);
+    background: #D2AFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* border: 5px solid var(--purplebg); */
+}
+.silver{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    color: var(--black);
+    background: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid purple; */
+    margin-left: -20px;
+    margin-right: -20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.black{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    color: whitE;
+    background: #4B006E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* border: 5px solid silver; */
+}
+
+/* Styles for Tablets */
+@media only screen and (max-width: 1024px) {
+    .colorcode__section{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .colorcode__section{
+        height: 55vh;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .colorcode__section{
+        height: 50vh;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .colorcode__section{
+        height: 100%;
+        padding: 40px 0
+    }
+    h2{
+        width: 80%;
+        margin: auto;
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+    .up{
+        font-size: 20px;
+    }
+    .bottom{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .silver{
+        margin-top: -20px;
+    margin-bottom: -20px;
+    }
+}

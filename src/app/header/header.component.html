@@ -1,0 +1,59 @@
+<div class="header">
+    <div class="header__desktop">
+        <div class="nav__left">
+            <a href="#story">Our Story</a>
+            <a href="#gifts">Gifts</a>
+        </div>
+        <div class="nav__logo">
+          <a href="#">
+            <img src="../../assets/logo.png" alt="" style="width: 60%; padding-top: 6px;"/>
+          </a>
+        </div>
+        <div class="nav__right">
+            <a href="#gallery">Gallery</a>
+            <a href="">Download Programme</a>
+        </div>
+    </div>
+    <div class="header__mobile">
+      <nav class="nav">
+        <div class="nav-brand">
+          <img src="../../assets/logo.png" alt="Logo">
+        </div>
+        <button class="nav-toggle" (click)="toggleMenu()">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu" [class.open]="menuOpen">
+          <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
+          <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
+          <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
+          <li (click)="toggleMenu()"><a routerLink="/about">Download Programme</a></li>
+          <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="header__container"> -->
+        <!-- <div class="mobile__left">
+          <img src="../../assets/logo.png" alt="" style="width: 170px;" >
+        </div>
+        <div class="mobile__right">
+          <img
+            class="hamburger"
+            onclick="openmenu()"
+            src="../../assets/hamburger.svg" style="width: 60%;"
+          />
+        </div> -->
+        <!-- <nav class="nav">
+          <div class="nav-brand">
+            <img src="../../assets/logo.png" alt="Logo">
+          </div>
+          <button class="nav-toggle" (click)="toggleMenu()">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-menu" [class.open]="menuOpen">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/about">About</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+          </ul>
+        </nav> -->
+      <!-- </div> -->
+  </div>
+</div>

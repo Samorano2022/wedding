@@ -1,0 +1,257 @@
+.heading__one{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 92px;
+    text-align: center;
+    line-height: 110%;
+    color: var(--milk);
+    overflow-y: hidden;
+    /* margin-top: 50%; */
+}
+.hero{
+    height: 145vh;
+    width: 100vw;
+    background-image: url(../../assets/newherobg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero__container{
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+}
+.hero__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* height: 100%; */
+    padding-top: 25%;
+}
+p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+    line-height: 150%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    overflow-y: hidden;
+    color: var(--milk);
+}
+.hero__btn{
+    border: 2px solid var(--milk);
+    padding: 12px 40px;
+    border-radius: 100px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--black);
+    color: var(--milk);
+}
+.hero__btn:hover{
+    background: var(--purple);
+    color: var(--milk);
+    border: none;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+.date__up{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.date{
+    font-size: 64px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #A9A0AD;
+
+}
+.time{
+font-size: 40px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+color: #A9A0AD;
+
+}
+.date__section{
+    padding-top: 30px;
+    padding-left: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.church{
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+color: #A9A0AD;
+
+}
+.july{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+color: #A9A0AD;
+
+}
+/* Styles for Tablets */
+@media only screen and (max-width: 1024px) {
+    .hero{
+        height: 100vh;
+    }
+    .heading__one{
+        font-size: 64px;
+    }
+    .date__section{
+        padding-top: 30px;
+        padding-left: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .hero{ 
+        height: 100vh;
+    }
+    .heading__one{
+        font-size: 64px;
+    }
+    .date__section{
+        padding-top: 30px;
+    padding-left: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+   .hero__container{
+    width: 80%;
+    margin: auto;
+    padding-top: 120px;
+    background-size: contain;
+    background-position: center;
+    /* height:100%; */
+   } 
+   .hero{
+    height: 100vh;
+   }
+   .hero__body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    /* padding-top: 110px; */
+   }
+   .heading__one{
+    font-size: 54px;
+   }
+   p{
+    line-height: 171%;
+        text-align: left;
+        font-size: 16px;
+   }
+   .hero__body{
+    height: 100%;
+    padding-top: 320px;
+
+   }
+   .church{
+    font-size: 12.5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+   }
+   .date{
+    font-size: 61px;
+   }
+   .time{
+    font-size: 30px;
+   }
+   .date__section{
+    /* padding-top: 30px; */
+    padding-left: 64%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+   }
+}
+@media screen and (max-width: 480px) {
+    .hero{
+        object-fit: fill;
+        /* height: 100%; */
+        /* background-size: auto; */
+    }
+    .date__section{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 100%;
+        align-content: center;
+        align-items: center;
+    }
+.hero__body{
+    height: 100%;
+    padding: 0;
+}
+    .hero__container{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        gap: 24px;
+        padding-top: 580px;
+    }
+    .heading__one{
+        font-size: 60px;
+        font-weight: 600;
+        text-align: center;
+    }
+    p{
+        line-height: 152%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .hero__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    br{
+        display: none;
+    }
+    .date{
+        font-size: 30px;
+    }
+    .time{
+        font-size: 26px;
+    }
+    .july{
+        font-size: 20px;
+    }
+    .mid img{
+        width: 70%;
+        padding-left: 15%;
+    }
+    .church{
+        font-size: 16px;
+    }
+
+    .date__up{
+    display: flex;
+    gap: 9px;
+    flex-direction: row-reverse;
+    align-items: center;
+    }
+    .date__section{
+        display: none;
+    }
+}
