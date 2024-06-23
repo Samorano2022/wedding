@@ -146,6 +146,9 @@ p{
             font-weight: 200;
             line-height: 150%;
         }
+        br{
+            display: none;
+        }
 }
 
 
