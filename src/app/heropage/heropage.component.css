@@ -186,6 +186,7 @@ color: #A9A0AD;
 @media screen and (max-width: 480px) {
     .hero{
     height: 100%;
+    padding-bottom: 60px;
     }
     .date__section{
         padding-left: 0;
@@ -251,5 +252,11 @@ color: #A9A0AD;
     }
     .date__section{
         display: none;
+    }
+    .heading__title{
+        padding-top: 40px;
+        font-size: 27px;
+        width: 80%;
+        margin: auto;
     }
 }
