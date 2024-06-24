@@ -185,9 +185,7 @@ color: #A9A0AD;
 }
 @media screen and (max-width: 480px) {
     .hero{
-        object-fit: fill;
-        /* height: 100%; */
-        /* background-size: auto; */
+    height: 100%;
     }
     .date__section{
         padding-left: 0;
