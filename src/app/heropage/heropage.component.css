@@ -131,6 +131,7 @@ color: #A9A0AD;
     flex-direction: column;
     gap: 12px;
     }
+
 }
 @media only screen and (max-width: 768px) {
    .hero__container{
@@ -258,5 +259,15 @@ color: #A9A0AD;
         font-size: 27px;
         width: 80%;
         margin: auto;
+    }
+    .hero__btn{
+        background: var(--purple);
+        color: var(--milk);
+        border: none;
+        cursor: pointer;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
