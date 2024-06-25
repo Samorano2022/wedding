@@ -261,7 +261,6 @@ a {
   }
   .nav-toggle{
     flex: none;
-    /* text-align: right; */
 }
   .nav-menu.open {
     transform: translateX(0);

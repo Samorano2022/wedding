@@ -17,7 +17,7 @@ import { LovestoryComponent } from "../lovestory/lovestory.component";
     standalone: true,
     templateUrl: './weddingpage.component.html',
     styleUrl: './weddingpage.component.css',
-    imports: [HeaderComponent, HeropageComponent, StoryComponent, GiftComponent, GalleryComponent, ColorcodeComponent, FooterComponent, WeddingCountdownComponent, VenueComponent, LovestoryComponent]
+    imports: [HeaderComponent, HeropageComponent, StoryComponent, GiftComponent, GalleryComponent, ColorcodeComponent, FooterComponent, VenueComponent, LovestoryComponent]
 })
 export class WeddingpageComponent {
     

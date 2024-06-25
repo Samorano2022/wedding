@@ -1,36 +1,54 @@
-import { Component } from '@angular/core';
-import { FormatNumberPipe } from '../formatNumber.pipe';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-wedding-countdown',
-  standalone: true,
-  imports: [FormatNumberPipe],
   templateUrl: './wedding-countdown.component.html',
-  styleUrl: './wedding-countdown.component.css'
+  styleUrl: './wedding-countdown.component.css',
 })
-export class WeddingCountdownComponent {
-  weddingDate = new Date('2024-07-06T00:00:00'); // Replace with your wedding date and time
-  days: number = 0;
-  hours: number = 0;
-  minutes: number = 0;
-  seconds: number = 0;
+export class WeddingCountdownComponent implements OnInit, OnDestroy {
+  targetDate: Date = new Date('2024-7-6T23:59:59');
+  remainingTime: any = {};
+  intervalId: any
 
   constructor() { }
 
   ngOnInit(): void {
-    this.getTimeRemaining();
+      // this.startCountdown()
+  }
+
+  ngOnDestroy(): void {
+      // this.clearInterval()
+  }
+
+  startCountdown(): void {
+    // this.getTimeRemaining();
     // setInterval(() => {
     //   this.getTimeRemaining();
-    // }, 10);
+    // }, 1000);
+  }
+
+  clearInterval(){
+    // if(this.intervalId){
+    //   clearInterval(this.intervalId)
+    //   this.intervalId=null
+    // }
   }
 
   getTimeRemaining() {
-    const now = new Date();
-    const difference = this.weddingDate.getTime() - now.getTime();
+    const currentTime = new Date().getTime();
+    const targetTime = this.targetDate.getTime();
+    const difference = targetTime - currentTime;
 
-    this.days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    this.hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    this.minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    this.seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    if (difference <= 0) {
+      // this.clearInterval();
+      this.remainingTime = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    } else {
+      this.remainingTime = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000)
+      };
+    }
   }
 }
