@@ -1,8 +1,9 @@
 .story{
-    height: 200vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 0;
 }
 .story__upContainer{
     width: 80%;
@@ -31,23 +32,25 @@
     font-weight: 500;
     font-size: 45px;
 }
-p{ width: 80%;
+p{ width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: justify;
     font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
-    font-size: 17px;
-    line-height: 180%;
+    font-size: 16px;
+    line-height: 190%;
     color: var(--milk);
     font-weight: 100;
 }
 .heading__title{
     color: var(--milk);
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 32px;
+    
 }
 h2{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -154,5 +157,16 @@ h2{
     width: 80%;
     margin: auto;
     padding-bottom: 16px;
+}
+.couple__name{
+    background: var(--milk);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 17px 6px;
+    border-radius: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    width: 100%;
 }
 }

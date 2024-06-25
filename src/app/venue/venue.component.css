@@ -51,13 +51,13 @@
     transition: 5ms ease-in-out;
 }
 p{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     text-align: center;
     color: var(--milk);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 158%;
 }
 
@@ -138,15 +138,21 @@ p{
         justify-content: center;
         }
         .hero__body{
-            padding: 24px 8px;
-            background: #270737;
+            padding: 24px;
+            background: #110517;
             border-radius: 16px;
         }
         .hero__btn{
-            background: var(--black);
+            width: 100%;
+            background: var(--purple);
             border: none;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        
         p{
             font-size: 18px;
             font-weight: 100;
