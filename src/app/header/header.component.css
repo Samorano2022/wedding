@@ -167,6 +167,93 @@ a {
     flex: none;
     /* text-align: right; */
 }
+.nav-menu.open {
+  transform: translateX(0);
+  height: 260px;
+  background: var(--purplebg);
+  border: none;
+  margin-top: 75px;
+}
+.header__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  transition: all ease-in-out 250ms;
+  z-index: 999;
+  overflow: hidden;
+
+}
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  z-index: 999;
+}
+.active.nav-menu{
+  z-index: 999;
+}
+.hero__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/hamburger.svg);
+  cursor: pointer;
+}
+.input-field {
+  width: 317px;
+  height: 55px;
+}
+ul.nav-menu.open{
+display: flex;
+z-index: 999;
+flex-direction: column;
+gap: 20px;
+align-items: flex-start;
+padding: 12px 35px;
+border-top: 1px solid #302f2f;
+justify-content: center;
+}
+.nav-menu li{
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.nav-menu > a{
+font-size: 14px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+text-align: left;
+}
+a{
+text-decoration: none;
+  color: var(--milk);
+  font-size: 12px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  width: 100%;
+}
+p {
+line-height: 158%;
+text-align: center;
+font-size: 16px;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -221,13 +308,15 @@ a {
   }
 
   .nav-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #f0f0f0;
-    z-index: 1;
+    height: 20vh;
+    background-color: var(--purplebg);
+    z-index: 999;
+    margin-top: 75px;
+    border: none;
   }
   .nav {
     display: flex;
@@ -242,6 +331,15 @@ a {
     flex: none;
     /* text-align: right; */
 }
+a{
+  text-decoration: none;
+    color: var(--milk);
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    width: 100%;
+ }
 }
 
 @media only screen and (max-width: 480px) {
@@ -257,6 +355,7 @@ a {
     /* gap: 110px; */
     width: 90%;
     margin: auto;
+    z-index: 999;
     /* flex-direction: row-reverse; */
   }
   .nav-toggle{
@@ -264,8 +363,10 @@ a {
 }
   .nav-menu.open {
     transform: translateX(0);
-    height: 280px;
-    background: #131313;
+    height: 190px;
+    background: var(--purplebg);
+    border: none;
+    margin-top: 75px;
   }
   .header__mobile {
     display: flex;
@@ -278,9 +379,12 @@ a {
     height: 80px;
     background: rgba(255, 255, 255, 0);
     transition: all ease-in-out 250ms;
+    z-index: 999;
+    overflow: hidden;
+
   }
   .nav-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -311,6 +415,38 @@ a {
     height: 55px;
 }
  ul.nav-menu.open{
+  display: flex;
   z-index: 999;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 12px 35px;
+  border-top: 1px solid #302f2f;
+  justify-content: center;
  }
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+ }
+ .nav-menu > a{
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  text-align: left;
+ }
+ a{
+  text-decoration: none;
+    color: var(--milk);
+    font-size: 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    width: 100%;
+ }
+ p {
+  line-height: 158%;
+  text-align: center;
+  font-size: 16px;
+}
 }

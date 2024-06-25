@@ -1,21 +1,28 @@
 <div class="header">
-    <div class="header__desktop">
-        <div class="nav__left">
-            <a href="#story">Our Story</a>
-            <a href="#gifts">Gifts</a>
-        </div>
-        <div class="nav__logo">
-          <a href="#">
-            <img src="../../assets/logo.png" alt="" style="width: 60%; padding-top: 6px;"/>
-          </a>
-        </div>
-        <div class="nav__right">
-            <a href="#gallery">Gallery</a>
-            <a href="">Download Programme</a>
-        </div>
+  <div class="header__desktop">
+    <div class="nav__left">
+      <a href="#story">Our Story</a>
+      <!-- <a (click)="scrollToStory.emit()">Our Story</a> -->
+      <a href="#gifts">Gifts</a>
+      <!-- <a (click)="scrollToGifts.emit()">Gifts</a> -->
     </div>
-    <div class="header__mobile">
-      <!-- <nav class="mobile-navbar">
+    <div class="nav__logo">
+      <a href="#">
+        <img
+          src="../../assets/logo.png"
+          alt=""
+          style="width: 60%; padding-top: 6px"
+        />
+      </a>
+    </div>
+    <div class="nav__right">
+      <a href="#gallery">Gifts</a>
+      <!-- <a (click)="scrollToGallery.emit()">Gallery</a> -->
+      <a href="">Download Programme</a>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <!-- <nav class="mobile-navbar">
         <div class="logo">
           <img src="assets/logo.png" alt="Logo">
         </div>
@@ -28,23 +35,30 @@
           <li><a routerLink="/contact">Contact</a></li>
         </ul>
       </nav> -->
-      <nav class="nav">
-        <div class="nav-brand">
-          <img src="../../assets/logo.png" alt="Logo">
-        </div>
-        <button class="nav-toggle" (click)="toggleMenu()">
-          <span class="hamburger"></span>
-        </button>
-        <ul class="nav-menu" [class.open]="menuOpen">
-          <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="../../assets/logo.png" alt="Logo" />
+      </div>
+      <button class="nav-toggle" (click)="toggleMenu()">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" [class.open]="menuOpen" (click)="toggleMenu()">
+        <!-- <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
           <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
           <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
           <li (click)="toggleMenu()"><a routerLink="/about">Download Programme</a></li>
-          <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- <div class="header__container"> -->
-        <!-- <div class="mobile__left">
+          <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li> -->
+        <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
+        <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
+        <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
+        <li (click)="toggleMenu()">
+          <a routerLink="/about">Download Programme</a>
+        </li>
+        <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- <div class="header__container"> -->
+    <!-- <div class="mobile__left">
           <img src="../../assets/logo.png" alt="" style="width: 170px;" >
         </div>
         <div class="mobile__right">
@@ -54,7 +68,7 @@
             src="../../assets/hamburger.svg" style="width: 60%;"
           />
         </div> -->
-        <!-- <nav class="nav">
+    <!-- <nav class="nav">
           <div class="nav-brand">
             <img src="../../assets/logo.png" alt="Logo">
           </div>
@@ -67,6 +81,6 @@
             <li><a routerLink="/contact">Contact</a></li>
           </ul>
         </nav> -->
-      <!-- </div> -->
+    <!-- </div> -->
   </div>
 </div>

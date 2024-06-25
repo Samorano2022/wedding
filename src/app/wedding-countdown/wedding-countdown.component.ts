@@ -1,53 +1,74 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 
 @Component({
   selector: 'app-wedding-countdown',
   templateUrl: './wedding-countdown.component.html',
   styleUrl: './wedding-countdown.component.css',
+  standalone: true,
 })
 export class WeddingCountdownComponent implements OnInit, OnDestroy {
-  targetDate: Date = new Date('2024-7-6T23:59:59');
+  isBrowser!: boolean;
+  targetDate: Date = new Date('2024-07-06T23:59:59');
   remainingTime: any = {};
-  intervalId: any
+  private intervalId: any;
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   ngOnInit(): void {
-      // this.startCountdown()
+    if (this.isBrowser) {
+      this.startCountdown();
+    }
   }
 
   ngOnDestroy(): void {
-      // this.clearInterval()
+    if (this.isBrowser) {
+      this.clearInterval();
+    }
   }
 
   startCountdown(): void {
-    // this.getTimeRemaining();
-    // setInterval(() => {
-    //   this.getTimeRemaining();
-    // }, 1000);
+    if (this.isBrowser) {
+      this.updateRemainingTime();
+      this.intervalId = window.setInterval(() => {
+        this.updateRemainingTime();
+      }, 1000);
+    }
   }
 
-  clearInterval(){
-    // if(this.intervalId){
-    //   clearInterval(this.intervalId)
-    //   this.intervalId=null
-    // }
+  clearInterval(): void {
+    if (this.isBrowser && this.intervalId) {
+      if (this.intervalId) {
+        clearInterval(this.intervalId);
+        this.intervalId = null;
+      }
+    }
   }
 
-  getTimeRemaining() {
+  updateRemainingTime(): void {
     const currentTime = new Date().getTime();
     const targetTime = this.targetDate.getTime();
     const difference = targetTime - currentTime;
 
     if (difference <= 0) {
-      // this.clearInterval();
+      this.clearInterval();
       this.remainingTime = { days: 0, hours: 0, minutes: 0, seconds: 0 };
     } else {
       this.remainingTime = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        seconds: Math.floor((difference % (1000 * 60)) / 1000),
       };
     }
   }

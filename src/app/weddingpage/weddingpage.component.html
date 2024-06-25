@@ -1,13 +1,26 @@
 <div class="heropage">
-    <app-header></app-header>
-    <app-heropage></app-heropage>
-    <app-venue></app-venue>
-    <!-- <app-wedding-countdown></app-wedding-countdown> -->
+  <app-header></app-header>
+  <!-- <app-header
+    (scroll)="scrollToStory()"
+    (scrollToGifts)="scrollToGifts()"
+    (scrollToGallery)="scrollToGallery()"
+  ></app-header> -->
+  <app-heropage></app-heropage>
+  <app-venue></app-venue>
+  <app-wedding-countdown></app-wedding-countdown>
+  <!-- <div #story>
     <app-story></app-story>
+  </div> -->
+  <app-story></app-story>
+  <!-- <div #gifts>
     <app-gift></app-gift>
+  </div> -->
+  <app-gift></app-gift>
+  <!-- <div #gallery>
     <app-gallery></app-gallery>
-    <app-colorcode></app-colorcode>
-    <!-- <app-lovestory></app-lovestory> -->
-    <app-footer></app-footer>
+  </div> -->
+  <app-gallery></app-gallery>
+  <app-colorcode></app-colorcode>
+  <!-- <app-lovestory></app-lovestory> -->
+  <app-footer></app-footer>
 </div>
-

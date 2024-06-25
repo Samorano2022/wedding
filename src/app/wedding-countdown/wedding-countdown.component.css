@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 600px;
+    height: 500px;
     padding: 0 304px;
   }
   
@@ -31,7 +31,7 @@
   }
   .countdown__section{
     height: 80vh;
-    /* background: var(--purplebg); */
+    background: #090411;
   }
     span{
         font-size: 26px;
@@ -43,6 +43,16 @@
         font-size: 64px;
         font-family: "Plus Jakarta Sans", sans-serif;
         font-optical-sizing: auto;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        color: white;
+        font-weight: 200;
+        padding-top: 40px;
+        padding-bottom: 16px;
     }
     /* Styles for Tablets */
 
@@ -91,5 +101,18 @@ background: url(../../assets/mobiletimerbg.png);
     /* height: 600px; */
     padding: 14px 0px;
     flex-direction: column;
+    height: 100%;
+}
+h2{
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+}
+.countdown__section{     
+    height: auto;
+    padding-bottom: 40px;
+}
+.countdown-item{
+    height: 100%;
 }
 }
