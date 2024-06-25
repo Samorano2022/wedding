@@ -8,7 +8,6 @@ import { WeddingCountdownComponent } from '../wedding-countdown/wedding-countdow
     standalone: true,
     templateUrl: './venue.component.html',
     styleUrl: './venue.component.css',
-    imports: [WeddingCountdownComponent],
 })
 export class VenueComponent {
  

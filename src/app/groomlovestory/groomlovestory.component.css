@@ -102,7 +102,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* cursor: pointer; */
 }
 .back__btn:hover{
     color: var(--milk);
@@ -162,5 +161,29 @@ h2{
     padding: 19px 0;
     line-height: 98%;
 }
+.back__btn{
+    color: var(--milk);
+    padding: 16px 16px;
+    border: 1px solid var(--milk);
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple);
+}
+/* .back__btn:hover{
+    color: var(--milk);
+    padding: 16px 16px;
+    border: 1px solid var(--purple);
+    width: fit-content;
+    border-radius: 8px;
+    background: var(--purple);
+} */
 }
     

@@ -11,7 +11,8 @@
 .hero{
     height: 145vh;
     width: 100vw;
-    background-image: url(../../assets/newherobg.png);
+    /* background-image: url(../../assets/newherobg.png); */
+    background-image: url(../../assets/herooo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

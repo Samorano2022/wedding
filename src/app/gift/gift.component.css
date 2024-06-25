@@ -71,7 +71,8 @@ p{
   top: 0;
   right: 0;
   border: none;
-  background-color: var(--black);
+  background-color: var(--purple);
+
   color: var(--milk);
   padding: 16px 20px;
   font-size: 16px;

@@ -64,7 +64,6 @@ p{
 .up, .mid, .bottom{
     color: var(--milk);
     font-size: 24px;
-
 }
 .herobody__mobile{
     display: none;
@@ -83,6 +82,10 @@ p{
     p{
         font-size: 26px;
     }
+    .herobody__mobile{
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 768px) {
     .venue__section{
@@ -90,6 +93,9 @@ p{
     }
     p{
         font-size: 26px;
+    }
+    .herobody__mobile{
+        display: none;
     }
 }
 @media screen and (max-width: 480px) {
@@ -143,11 +149,12 @@ p{
         }
         p{
             font-size: 18px;
-            font-weight: 200;
-            line-height: 150%;
+            font-weight: 100;
+            line-height: 160%;
         }
-        br{
-            display: none;
+       
+        .herobody__mobile{
+            display: block;
         }
 }
 

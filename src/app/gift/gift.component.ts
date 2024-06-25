@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-gift',
   standalone: true,
   imports: [],
   templateUrl: './gift.component.html',
-  styleUrl: './gift.component.css'
+  styleUrl: './gift.component.css',
 })
 export class GiftComponent {
-  inputValue: string = 'This text will be copied to the clipboard';
+  accountNumber = '3142030760';
+  constructor() {}
 
-  onCopySuccess() {
-    console.log('Copied to clipboard!');
+  copyAccountNumber() {
+    // this.clipboard.writeText(this.accountNumber);
+    navigator.clipboard.writeText(this.accountNumber);
+    alert('Account Number copied successfully!');
   }
-  }
+}
