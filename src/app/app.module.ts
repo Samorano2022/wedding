@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [ WeddingCountdownComponent],
-  imports: [BrowserModule, ClipboardModule, FormsModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: []
 })
