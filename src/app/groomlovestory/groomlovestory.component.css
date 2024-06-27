@@ -72,11 +72,10 @@ h2{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 90px;
+    font-size: 60px;
     line-height: 118%;
     text-align: justify;
     color: #808080;
-
     overflow: hidden;  
 }
 .title{
@@ -128,6 +127,11 @@ h2{
     }
     h2{
         font-size: 26px;
+    }
+    .first__chapter{
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     }
 }
 @media only screen and (max-width: 768px) {

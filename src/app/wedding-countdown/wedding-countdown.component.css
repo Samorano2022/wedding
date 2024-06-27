@@ -31,7 +31,7 @@
   }
   .countdown__section{
     height: 80vh;
-    background: #090411;
+    background: #040405;
   }
     span{
         font-size: 26px;
@@ -49,8 +49,8 @@
         text-align: center;
         font-family: "Plus Jakarta Sans", sans-serif;
         font-optical-sizing: auto;
-        color: white;
-        font-weight: 200;
+        color: var(--milk);
+        font-weight: 500;
         padding-top: 40px;
         padding-bottom: 16px;
     }

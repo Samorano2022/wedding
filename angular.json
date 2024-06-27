@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -90,7 +91,6 @@
             ],
             "styles": [
               "src/styles.css"
-             
             ],
             "scripts": []
           }

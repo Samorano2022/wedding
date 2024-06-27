@@ -1,25 +1,27 @@
 <div class="header">
   <div class="header__desktop">
-    <div class="nav__left">
-      <a href="#story">Our Story</a>
+    <ul class="nav__left">
+      <li routerlink="/venue" >Our Story</li>
       <!-- <a (click)="scrollToStory.emit()">Our Story</a> -->
-      <a href="#gifts">Gifts</a>
+      <li>Gifts</li>
+      <!-- <a href="#gifts">Gifts</a> -->
       <!-- <a (click)="scrollToGifts.emit()">Gifts</a> -->
-    </div>
-    <div class="nav__logo">
-      <a href="#">
+    </ul>
+    <ul class="nav__logo">
+      <li>
         <img
           src="../../assets/logo.png"
           alt=""
           style="width: 60%; padding-top: 6px"
         />
-      </a>
-    </div>
-    <div class="nav__right">
-      <a href="#gallery">Gifts</a>
+      </li>
+    </ul>
+    <ul class="nav__right">
+      <li href="#gallery">Gifts</li>
       <!-- <a (click)="scrollToGallery.emit()">Gallery</a> -->
-      <a href="">Download Programme</a>
-    </div>
+      <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Open Programme</a>
+      <!-- <a href="" (click)="generatePDF()">Download Programme</a> -->
+    </ul>
   </div>
   <div class="header__mobile">
     <!-- <nav class="mobile-navbar">
@@ -51,10 +53,11 @@
         <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
         <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
         <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
-        <li (click)="toggleMenu()">
-          <a routerLink="/about">Download Programme</a>
+        <!-- <li (click)="generatePDF()"> -->
+          <li (click)="toggleMenu()">
+          <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Open Programme</a>
         </li>
-        <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li>
+        <li (click)="toggleMenu()"><a routerLink="/contact">Livestream</a></li>
       </ul>
     </nav>
     <!-- <div class="header__container"> -->

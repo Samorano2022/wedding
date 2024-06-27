@@ -132,7 +132,10 @@ color: #A9A0AD;
     flex-direction: column;
     gap: 12px;
     }
-
+.hero__body{
+    height: 100%;
+    padding-top: 65%;
+}
 }
 @media only screen and (max-width: 768px) {
    .hero__container{

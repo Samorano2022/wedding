@@ -1,4 +1,4 @@
-<div class="venue__section">
+<div id="venue" class="venue__section">
     <div class="venue__container">
         <div class="herobody__mobile">
             <div class="date__section">
@@ -15,12 +15,17 @@
                 </div>
             </div>
         </div>
-        <div class="hero__body">
+        <div data-aos="fade-up"
+        data-aos-duration="2000"  class="hero__body">
             <p>"Husbands, love your wives, just as Christ <br> 
                 loved the church and gave himself up for her."  
             <br> - Ephesians 5:25
             </p>
-            <div class="hero__btn">
+            <div (click)="downloadPdf()" class="hero__btn">
+                <!-- <button (click)="downloadPdf()"></button> -->
+
+                <!-- <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Wedding Programme</a> -->
+                <!-- <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Wedding Programme</a> -->
                 Wedding Programme
             </div>
         </div>

@@ -34,7 +34,7 @@
     text-align: center;
     font-size: 12px;
     font-weight: 100;
-    line-height: 144%;
+    line-height: 154%;
 
 }
 
@@ -44,4 +44,15 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+}
+.footer__up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--milk);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
 }

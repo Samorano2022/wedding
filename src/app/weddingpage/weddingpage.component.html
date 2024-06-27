@@ -1,26 +1,84 @@
 <div class="heropage">
-  <app-header></app-header>
-  <!-- <app-header
-    (scroll)="scrollToStory()"
-    (scrollToGifts)="scrollToGifts()"
-    (scrollToGallery)="scrollToGallery()"
-  ></app-header> -->
-  <app-heropage></app-heropage>
-  <app-venue></app-venue>
-  <app-wedding-countdown></app-wedding-countdown>
-  <!-- <div #story>
+  <section id="home" class="header__frame">
+    <div class="header">
+      <div class="header__desktop">
+        <ul class="nav__left">
+          <li (click)="toStory()" routerLinkActive="active">Our Story</li>
+          <li (click)="toGift()" routerLinkActive="active">Gifts</li>
+        </ul>
+        <ul class="nav__logo">
+          <li (click)="toHome()" routerLink="/home">
+            <img
+              src="../../assets/logo.png"
+              alt=""
+              style="width: 50%; padding-top: 12px"
+            />
+          </li>
+        </ul>
+        <ul class="nav__right">
+          <li (click)="toGallery()" routerLinkActive="active">Gallery</li>
+          <a
+            target="_blank"
+            href="https://heyzine.com/flip-book/245c152ebf.html"
+            >Open Programme</a
+          >
+        </ul>
+      </div>
+      <div class="header__mobile">
+        <nav class="nav">
+          <div class="nav-brand">
+            <img (click)="toHome()" routerLink="/home" src="../../assets/logo.png" alt="Logo" />
+          </div>
+          <button class="nav-toggle" (click)="toggleMenu()">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-menu" [class.open]="menuOpen" (click)="toggleMenu()">
+            <li (click)="toStory()" routerLinkActive="active">Our Story</li>
+            <li (click)="toGift()" routerLinkActive="active">Gifts</li>
+            <li (click)="toGallery()" routerLinkActive="active">Gallery</li>
+            <li>
+              <a
+                target="_blank"
+                href="https://heyzine.com/flip-book/245c152ebf.html"
+                >Open Programme</a
+              >
+            </li>
+            <li (click)="toggleMenu()">
+              <a routerLink="/contact">Livestream</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <app-heropage></app-heropage>
+  </section>
+
+  <section id="venue" class="venue__frame">
+    <app-venue></app-venue>
+  </section>
+
+  <section id="count" class="weddingcount__frame">
+    <app-wedding-countdown></app-wedding-countdown>
+  </section>
+
+  <section id="story" class="story">
     <app-story></app-story>
-  </div> -->
-  <app-story></app-story>
-  <!-- <div #gifts>
+  </section>
+
+  <section id="gift" class="gift__frame">
     <app-gift></app-gift>
-  </div> -->
-  <app-gift></app-gift>
-  <!-- <div #gallery>
+  </section>
+
+  <section id="gallery" class="gallery__frame">
     <app-gallery></app-gallery>
-  </div> -->
-  <app-gallery></app-gallery>
-  <app-colorcode></app-colorcode>
+  </section>
+
+  <section id="colorcode" class="colorcode__frame">
+    <app-colorcode></app-colorcode>
+  </section>
+
   <!-- <app-lovestory></app-lovestory> -->
-  <app-footer></app-footer>
+  <section id="footer" class="footer__frame">
+    <app-footer></app-footer>
+  </section>
 </div>

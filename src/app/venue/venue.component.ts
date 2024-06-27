@@ -10,5 +10,12 @@ import { WeddingCountdownComponent } from '../wedding-countdown/wedding-countdow
     styleUrl: './venue.component.css',
 })
 export class VenueComponent {
- 
+    pdfUrl = 'assets/weddingprog.pdf';
+
+    downloadPdf() {
+      const link = document.createElement('a');
+      link.href = this.pdfUrl;
+      link.download = 'weddingprog.pdf';
+      link.click();
+    }
 }
