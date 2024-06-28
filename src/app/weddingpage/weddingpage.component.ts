@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { HeropageComponent } from '../heropage/heropage.component';
 import { StoryComponent } from '../story/story.component';
@@ -34,6 +34,8 @@ import { DOCUMENT } from '@angular/common';
   ],
 })
 export class WeddingpageComponent {
+  constructor(){}
+
   @ViewChild('story', { static: false }) story!: ElementRef;
   @ViewChild('gifts', { static: false }) gifts!: ElementRef;
   @ViewChild('gallery', { static: false }) gallery!: ElementRef;
@@ -83,18 +85,7 @@ export class WeddingpageComponent {
   toHome(){
     document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
   }
-
-  constructor(@Inject(DOCUMENT) private document: Document) {}
-
   ngOnInit() {
-    // Check if document is available before using AOS
-    if (typeof this.document !== 'undefined') {
-      // Initialize AOS library here using the injected document object
-      AOS.init();
-    }
-  // }
-  // ngOnInit() {
-  //   AOS.init();
-  // }
-}
+    AOS.init();
+  }
 }
