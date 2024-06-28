@@ -3,6 +3,6 @@
       "env": {
         "NODE_ENV": "production"
       },
-      "build": "ng build --prod" 
+      "buildCommand": "next build"
     }
   }
