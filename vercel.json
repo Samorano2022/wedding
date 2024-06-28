@@ -1,8 +1,2 @@
-{
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      },
-      "buildCommand": "next build"
-    }
+{     "buildCommand": "next build"
   }
