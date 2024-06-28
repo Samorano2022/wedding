@@ -33,7 +33,8 @@
 .hero__btn{
     width: 215px;
     margin: auto;
-    border: 1.2px solid var(--purplebg);
+    border: 2px solid;
+    /* border: 1.2px solid var(--purplebg); */
     color: var(--milk);
     padding: 12px 24px;
     border-radius: 100px;
@@ -42,16 +43,32 @@
     font-weight: 500;
     text-align: center;
     background: var(--black);
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
 }
+/* .hero__btn:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+} */
+
+
 .hero__btn:hover{
-    background: var(--purple);
-    color: var(--milk);
-    border: 1.2px solid var(--purple);
+    /* background: #12021d; */
+    color: var(--purple);
+    border: 2px solid;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 500;
     transition: 5ms ease-in-out;
+/* border-radius: 100px; */
+	
+border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+
+    box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.54);
+-webkit-box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.54);
+-moz-box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.54);
 }
 p{
     font-size: 24px;
@@ -71,7 +88,34 @@ p{
 .herobody__mobile{
     display: none;
 }
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
 
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
 /* Styles for Tablets */
 @media only screen and (max-width: 1024px) {
     .venue__section{

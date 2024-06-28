@@ -11,7 +11,6 @@ import { VenueComponent } from '../venue/venue.component';
 import { LovestoryComponent } from '../lovestory/lovestory.component';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import AOS from 'aos';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-weddingpage',

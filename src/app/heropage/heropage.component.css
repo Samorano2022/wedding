@@ -43,7 +43,7 @@ p{
 }
 .hero__btn{
     border: 2px solid var(--milk);
-    padding: 12px 40px;
+    padding: 16px 20px;
     border-radius: 100px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
@@ -61,6 +61,9 @@ p{
     font-optical-sizing: auto;
     font-size: 16px;
     font-weight: 500;
+    box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.74);
+-webkit-box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.84);
+-moz-box-shadow: 9px 11px 67px -13px rgba(181,31,194,0.74);
 }
 .date__up{
     display: flex;

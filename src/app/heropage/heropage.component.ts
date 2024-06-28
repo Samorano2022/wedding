@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import AOS from 'aos';
 
 
 @Component({
@@ -10,8 +9,6 @@ import AOS from 'aos';
   styleUrl: './heropage.component.css'
 })
 export class HeropageComponent {
-  ngOnInit(){
-    AOS.init()
-  }
+ 
 }
 
