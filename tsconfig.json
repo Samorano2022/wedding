@@ -1,5 +1,5 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
-{ "angular-rxjs-resolution": false,
+{ 
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
