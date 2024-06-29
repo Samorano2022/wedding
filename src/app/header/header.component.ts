@@ -5,7 +5,8 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-// import jsPDF from 'jspdf';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -26,7 +27,10 @@ export class HeaderComponent {
   closeMenu() {
     this.menuOpen = false;
   }
-  
+  constructor(private router: Router) {}
+    onHome() {
+      this.router.navigateByUrl('home');
+    }
   // generatePDF(){
   //   const doc = new jsPDF();
 

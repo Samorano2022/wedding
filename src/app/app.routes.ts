@@ -3,11 +3,12 @@ import { WeddingpageComponent } from './weddingpage/weddingpage.component';
 import { LovestoryComponent } from './lovestory/lovestory.component';
 import { NgModule } from '@angular/core';
 import { GroomlovestoryComponent } from './groomlovestory/groomlovestory.component';
+import { HeaderComponent } from './header/header.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: WeddingpageComponent },
-  { path: 'lovestory', component: LovestoryComponent },
+  { path: 'lovestory', component: HeaderComponent },
   { path: 'groomstory', component: GroomlovestoryComponent },
 
 ];

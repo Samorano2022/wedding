@@ -1,89 +1,72 @@
-<div class="header">
-  <div class="header__desktop">
-    <ul class="nav__left">
-      <li routerlink="/venue" >Our Story</li>
-      <!-- <a (click)="scrollToStory.emit()">Our Story</a> -->
-      <li>Gifts</li>
-      <!-- <a href="#gifts">Gifts</a> -->
-      <!-- <a (click)="scrollToGifts.emit()">Gifts</a> -->
-    </ul>
-    <ul class="nav__logo">
-      <li>
-        <img
-          src="../../assets/logo.png"
-          alt=""
-          style="width: 60%; padding-top: 6px"
-        />
-      </li>
-    </ul>
-    <ul class="nav__right">
-      <li href="#gallery">Gifts</li>
-      <!-- <a (click)="scrollToGallery.emit()">Gallery</a> -->
-      <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Open Programme</a>
-      <!-- <a href="" (click)="generatePDF()">Download Programme</a> -->
-    </ul>
-  </div>
-  <div class="header__mobile">
-    <!-- <nav class="mobile-navbar">
-        <div class="logo">
-          <img src="assets/logo.png" alt="Logo">
-        </div>
-        <button class="hamburger" (click)="toggleNavLinks()">
-          <span class="hamburger-icon"></span>
-        </button>
-        <ul class="nav-links" [class.show]="navLinksVisible">
-          <li><a routerLink="/home">Home</a></li>
-          <li><a routerLink="/about">About</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
-        </ul>
-      </nav> -->
-    <nav class="nav">
-      <div class="nav-brand">
-        <img src="../../assets/logo.png" alt="Logo" />
-      </div>
-      <button class="nav-toggle" (click)="toggleMenu()">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-menu" [class.open]="menuOpen" (click)="toggleMenu()">
-        <!-- <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
-          <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
-          <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
-          <li (click)="toggleMenu()"><a routerLink="/about">Download Programme</a></li>
-          <li (click)="toggleMenu()"><a routerLink="/contact">Contact</a></li> -->
-        <li (click)="toggleMenu()"><a routerLink="/story">Our Story</a></li>
-        <li (click)="toggleMenu()"><a routerLink="/about">Gifts</a></li>
-        <li (click)="toggleMenu()"><a routerLink="/contact">Gallery</a></li>
-        <!-- <li (click)="generatePDF()"> -->
-          <li (click)="toggleMenu()">
-          <a target="_blank" href="https://heyzine.com/flip-book/245c152ebf.html">Open Programme</a>
-        </li>
-        <li (click)="toggleMenu()"><a routerLink="/contact">Livestream</a></li>
-      </ul>
-    </nav>
-    <!-- <div class="header__container"> -->
-    <!-- <div class="mobile__left">
-          <img src="../../assets/logo.png" alt="" style="width: 170px;" >
-        </div>
-        <div class="mobile__right">
-          <img
-            class="hamburger"
-            onclick="openmenu()"
-            src="../../assets/hamburger.svg" style="width: 60%;"
-          />
-        </div> -->
-    <!-- <nav class="nav">
-          <div class="nav-brand">
-            <img src="../../assets/logo.png" alt="Logo">
+<div class="lovestory__section">
+  <div class="lovestory__body">
+    <div class="back__btn" (click)="onHome()">
+      <img src="../../assets/Group.svg" alt="" style="width: 10px" />
+      <p>Back to Home</p>
+    </div>
+    <div class="lovestory__container">
+      <!-- <h2>Bride-love Story</h2> -->
+      <div class="chapter__body">
+        <div class="first__chapter">
+          <img src="../../assets/thankyou.png" alt=""  style="width: 350px;">
+          <div class="continuation__body">
+            <p class="title">Continuation...</p>
+            <p class="continuation">
+              <b>A Memorable Birthday</b>
+              <br />
+              <b>May 7th, 2023: 
+                The Proposal</b> <br> A year later, on May
+              7th, 2023, my birthday was destined to be even more memorable. We
+              planned a lunch date to celebrate. As we enjoyed our meal and the
+              conversation flowed, Ayokanmi did something I didn't expect. With
+              a mix of humor and seriousness, he asked, “WILL YOU MARRY ME?
+              PLEASE TAKE YOUR TIME TO ANSWER.” My heart raced. I was so
+              surprised and unsure of what to say at that moment. I needed time
+              to process this huge step. On May 19th, I sent him a message
+              saying “YES,” and on May 22nd, I reaffirmed my answer in person.
+              That moment solidified our future together. 
+              <br />
+              <b>The Proposal</b>
+          <br />
+          <b>Building Our Future
+            Together</b>
+           <br>
+              The journey from that initial conversation to the
+              proposal was filled with numerous moments of 
+              <br />
+            </p>
           </div>
-          <button class="nav-toggle" (click)="toggleMenu()">
-            <span class="hamburger"></span>
-          </button>
-          <ul class="nav-menu" [class.open]="menuOpen">
-            <li><a routerLink="/home">Home</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
-          </ul>
-        </nav> -->
-    <!-- </div> -->
+        </div>
+        <!-- second chapter -->
+        <div class="second__chapter">
+          joy and challenges.
+              Sharing our dreams, aspirations, and goals required effort and
+              understanding. There were times when it was difficult, but we
+              always leaned on each other and our faith in God. Making God the
+              foundation of our relationship has been crucial.
+           His guidance has
+              brought us closer and helped us navigate the ups and downs of life
+              together. The counseling we received from family and mentors was
+              invaluable. They provided us with wisdom and support that
+              strengthened our bond.
+              <br>
+              <b>A Message to Future Couples</b> 
+              <br>To all the
+              intending couples out there, we cannot stress enough the
+              importance of making God the cornerstone of your relationship.
+              Without Him, a life and a family have nothing.
+              “A LIFE AND A
+              FAMILY WITH JESUS HAVE EVERYTHING.” Our story is a testament to
+              the power of faith, friendship, and love. We are excited about our
+              future together and thankful for every moment that brought us to
+              this point. As we look forward to our life together, we remain
+              grateful for the journey we've had and for the people who have
+              supported us along the way. Our story is still being written, and
+              we know that with God’s guidance, the best is yet to come.
+        </div>     
+      </div>
+    </div>
   </div>
 </div>
+
+  
