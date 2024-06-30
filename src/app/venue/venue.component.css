@@ -200,7 +200,14 @@ p{
             justify-content: center;
         }
         .hero__btn:hover{
-            display: none;
+            width: 100%;
+            background: var(--purple);
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         p{
