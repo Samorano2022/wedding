@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { HeropageComponent } from '../heropage/heropage.component';
 import { StoryComponent } from '../story/story.component';
@@ -11,6 +11,7 @@ import { VenueComponent } from '../venue/venue.component';
 import { LovestoryComponent } from '../lovestory/lovestory.component';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import AOS from 'aos';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-weddingpage',
@@ -28,12 +29,11 @@ import AOS from 'aos';
     VenueComponent,
     LovestoryComponent,
     WeddingCountdownComponent,
-    AnimateOnScrollModule, 
-  
+    AnimateOnScrollModule
   ],
 })
 export class WeddingpageComponent {
-  constructor(){}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object){}
 
   @ViewChild('story', { static: false }) story!: ElementRef;
   @ViewChild('gifts', { static: false }) gifts!: ElementRef;
@@ -84,7 +84,14 @@ export class WeddingpageComponent {
   toHome(){
     document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
   }
-  ngOnInit() {
-    AOS.init();
+  // ngOnInit() {
+  //   AOS.init();
+  // }
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      // Initialize AOS in the browser environment only
+      AOS.init();
+    }
   }
 }
