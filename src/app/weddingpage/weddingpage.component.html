@@ -30,7 +30,8 @@
             <img (click)="toHome()" routerLink="/home" src="../../assets/logo.png" alt="Logo" />
           </div>
           <button class="nav-toggle" (click)="toggleMenu()">
-            <span class="hamburger"></span>
+            <!-- <span class="hamburger"></span> -->
+            <span [class.hamburger]="!menuOpen" [class.cancel]="menuOpen"></span>
           </button>
           <ul class="nav-menu" [class.open]="menuOpen" (click)="toggleMenu()">
             <li (click)="toStory()" routerLinkActive="active">Our Story</li>

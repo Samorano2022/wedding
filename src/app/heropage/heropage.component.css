@@ -41,6 +41,9 @@ p{
     overflow-y: hidden;
     color: var(--milk);
 }
+a{text-decoration: none;
+    color: var(--milk);
+}
 .hero__btn{
     border: 2px solid var(--milk);
     padding: 16px 20px;
