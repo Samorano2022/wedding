@@ -199,6 +199,9 @@ p{
             align-items: center;
             justify-content: center;
         }
+        .hero__btn:hover{
+            display: none;
+        }
         
         p{
             font-size: 18px;
