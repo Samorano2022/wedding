@@ -161,12 +161,12 @@ h2{
     .colorcode__section{
         height: 100%;
     }
-h2{
+  h2{
     font-size: 45px;
     padding: 19px 0;
     line-height: 98%;
-}
-.back__btn{
+  }
+  .back__btn{
     color: var(--milk);
     padding: 16px 16px;
     border: 1px solid var(--milk);
@@ -181,14 +181,30 @@ h2{
     align-items: center;
     justify-content: center;
     background: var(--purple);
-}
-/* .back__btn:hover{
-    color: var(--milk);
-    padding: 16px 16px;
-    border: 1px solid var(--purple);
-    width: fit-content;
-    border-radius: 8px;
-    background: var(--purple);
-} */
-}
+  }
+  .lovestory__container{
+    width: 100%;
+  }
+  .lovestory__body{
+    width: 80%;
+    margin: auto;
+  }
+  .continuation__body{
+    width: 100%;
+    margin: auto;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    color: #808080;
+    line-height: 168%;
+    text-align: justify;
+  }
+  }
+  .first__chapter{
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+  }
     

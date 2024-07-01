@@ -22,12 +22,25 @@
   padding-top: 60px;
 }
 .first__chapter{
+  width: 100%;
 display: grid;
 /* grid-template-columns: repeat(2, minmax(400px, 500px)); */
 grid-template-columns: 1fr 2fr; /* 2fr makes the first column bigger than the others */
 gap: 10px;
 }
 .continuation{
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 17px;
+  color: #808080;
+  line-height: 168%;
+  text-align: justify;
+}
+.continuation__body{
+  width: 100%;
   width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -183,13 +196,31 @@ h2{
   justify-content: center;
   background: var(--purple);
 }
-/* .back__btn:hover{
-  color: var(--milk);
-  padding: 16px 16px;
-  border: 1px solid var(--purple);
-  width: fit-content;
-  border-radius: 8px;
-  background: var(--purple);
-} */
+.lovestory__container{
+  width: 100%;
 }
+.lovestory__body{
+  width: 80%;
+  margin: auto;
+}
+.continuation__body{
+  width: 100%;
+  margin: auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 17px;
+  color: #808080;
+  line-height: 168%;
+  text-align: justify;
+}
+}
+.first__chapter{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+}
+
+
   
