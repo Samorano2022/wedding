@@ -25,6 +25,7 @@ p {
   font-weight: 200;
   color: var(--milk);
   line-height: 158%;
+  padding-bottom: 20px;
 }
 .gallerycollage {
   display: grid;
