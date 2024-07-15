@@ -1,4 +1,5 @@
 .countdown-container {
+    color: var(--milk);
     font-size: 16px;
     width: 100vw;
     margin: auto;
