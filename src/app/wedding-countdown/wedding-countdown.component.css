@@ -3,7 +3,7 @@
     justify-content: space-between;
     gap: 20px;
     align-items: center;
-    font-size: 3rem;
+    font-size: 16px;
     font-weight: bold;
     width: 100vw;
     margin: auto;
@@ -11,10 +11,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 500px;
-    padding: 0 304px;
+    height: 100%;
+    padding: 0 34px;
   }
-  
+.countdown__body{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}  
   .countdown-item {
     width: 180px;
     height: 150px;
@@ -30,7 +34,7 @@
     margin-bottom: 2px;
   }
   .countdown__section{
-    height: 80vh;
+    height: 100dvh;
     background: #040405;
   }
     span{
