@@ -9,7 +9,6 @@
     /* background: url(../../assets/venuebgg.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 h3{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -79,12 +78,12 @@ p{
     line-height: 190%;
     color: var(--milk);
     font-weight: 100;
-    width: 80%;
+    /* width: 80%;
     margin: auto;
     height: 100%;
     background: var(--purplebg);  
     padding: 32px 0;
-    border-radius: 42px;
+    border-radius: 42px; */
 }
 
 .up, .mid, .bottom{
