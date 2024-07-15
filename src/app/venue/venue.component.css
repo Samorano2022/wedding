@@ -12,9 +12,9 @@
     /* background-position: center; */
 }
 h3{
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    font-size: 45px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
     text-align: center;
     color: var(--milk);
 }
