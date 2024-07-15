@@ -92,6 +92,7 @@ color: #A9A0AD;
 .date__section{
     padding-top: 30px;
     padding-left: 78%;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 12px;

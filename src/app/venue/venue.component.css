@@ -35,6 +35,7 @@ h3{
     flex-direction: column;
     gap: 24px;
     overflow: hidden;
+
 }
 .hero__btn{
     width: 215px;
@@ -78,6 +79,12 @@ p{
     line-height: 190%;
     color: var(--milk);
     font-weight: 100;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    background: var(--purplebg);  
+    padding: 32px 0;
+    border-radius: 42px;
 }
 
 .up, .mid, .bottom{
