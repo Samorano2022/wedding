@@ -9,7 +9,7 @@
     /* margin-top: 50%; */
 }
 .hero{
-    height: 145vh;
+    height: 145dvh;
     width: 100vw;
     /* background-image: url(../../assets/newherobg.png); */
     background-image: url(../../assets/herooo.png);
@@ -21,6 +21,7 @@
     width: 80%;
     margin: auto;
     padding-top: 10%;
+    height: 100%;
 }
 .hero__body{
     display: flex;
