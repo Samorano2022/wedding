@@ -5,22 +5,23 @@
     text-align: center;
     line-height: 110%;
     color: var(--milk);
-    overflow-y: hidden;
+    overflow: hidden;
     /* margin-top: 50%; */
 }
 .hero{
-    height: 145dvh;
+    height: 100vh;
     width: 100vw;
     /* background-image: url(../../assets/newherobg.png); */
     background-image: url(../../assets/herooo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .hero__container{
     width: 80%;
     margin: auto;
-    padding-top: 10%;
+    padding-top: 5%;
     height: 100%;
 }
 .hero__body{
@@ -30,7 +31,7 @@
     align-items: flex-start;
     gap: 20px;
     height: 100%;
-    padding-top: 25%;
+    padding-top:10%;
 }
 p{
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -79,15 +80,15 @@ a{text-decoration: none;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     color: #A9A0AD;
-
 }
+
 .time{
 font-size: 40px;
 font-family: "Plus Jakarta Sans", sans-serif;
 font-optical-sizing: auto;
 color: #A9A0AD;
-
 }
+
 .date__section{
     padding-top: 30px;
     padding-left: 78%;

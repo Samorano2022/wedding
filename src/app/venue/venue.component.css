@@ -11,6 +11,13 @@
     background-size: cover;
     /* background-position: center; */
 }
+h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    color: var(--milk);
+}
 .venue__container{
     width: 80%;
     margin: auto;
