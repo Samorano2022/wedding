@@ -12,6 +12,9 @@ import { LovestoryComponent } from '../lovestory/lovestory.component';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import AOS from 'aos';
 import { isPlatformBrowser } from '@angular/common';
+import { Router } from '@angular/router';
+import { CollageComponent } from '../collage/collage.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-weddingpage',
@@ -29,15 +32,19 @@ import { isPlatformBrowser } from '@angular/common';
     VenueComponent,
     LovestoryComponent,
     WeddingCountdownComponent,
-    AnimateOnScrollModule
+    AnimateOnScrollModule, 
+    CollageComponent, CommonModule
   ],
 })
 export class WeddingpageComponent {
+  router: any;
   constructor(@Inject(PLATFORM_ID) private platformId: Object){}
+
 
   @ViewChild('story', { static: false }) story!: ElementRef;
   @ViewChild('gifts', { static: false }) gifts!: ElementRef;
   @ViewChild('gallery', { static: false }) gallery!: ElementRef;
+  @ViewChild('colour', { static: false }) colour!: ElementRef;
 
   scrollToStory() {
     this.story.nativeElement.scrollIntoView({
@@ -54,6 +61,13 @@ export class WeddingpageComponent {
 
   scrollToGallery() {
     this.gallery.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  scrollToColour() {
+    this.colour.nativeElement.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
@@ -84,6 +98,10 @@ export class WeddingpageComponent {
   toHome(){
     document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
   }
+  toColour(){
+    document.getElementById("colour")?.scrollIntoView({behavior: "smooth"});
+  }
+ 
   // ngOnInit() {
   //   AOS.init();
   // }
@@ -94,4 +112,6 @@ export class WeddingpageComponent {
       AOS.init();
     }
   }
+
+  
 }

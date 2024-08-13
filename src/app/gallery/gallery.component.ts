@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './gallery.component.css'
 })
 export class GalleryComponent {
-
+  constructor(private router: Router) {}
+  onCollage() {
+    this.router.navigateByUrl('collage');
+  }
 }

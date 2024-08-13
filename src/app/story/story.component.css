@@ -36,11 +36,11 @@ b{
     font-weight: 400;
     font-size: 40px;
 }
-p{ width: 100%;
+p{  width: 100%;
     margin: auto;
     text-align: justify;
     font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-size: 15px;
     line-height: 190%;
     color: var(--milk);
