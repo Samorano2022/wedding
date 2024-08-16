@@ -17,36 +17,31 @@
         </ul>
         <ul class="nav__right">
           <li (click)="toGallery()" routerLinkActive="active">Gallery</li>
-          <a
-            target="_blank"
-            href="https://heyzine.com/flip-book/ddc8a47522.html"
-            >Open Programme</a
-          >
+          <li (click)="toColour()" routerLinkActive="active">Colour Theme</li>
         </ul>
       </div>
       <div class="header__mobile">
         <nav class="nav">
           <div class="nav-brand">
-            <img (click)="toHome()" routerLink="/home" src="../../assets/logo.png" alt="Logo" />
+            <img
+              (click)="toHome()"
+              routerLink="/home"
+              src="../../assets/logo.png"
+              alt="Logo"
+            />
           </div>
           <button class="nav-toggle" (click)="toggleMenu()">
             <!-- <span class="hamburger"></span> -->
-            <span [class.hamburger]="!menuOpen" [class.cancel]="menuOpen"></span>
+            <span
+              [class.hamburger]="!menuOpen"
+              [class.cancel]="menuOpen"
+            ></span>
           </button>
           <ul class="nav-menu" [class.open]="menuOpen" (click)="toggleMenu()">
             <li (click)="toStory()" routerLinkActive="active">Our Story</li>
             <li (click)="toGift()" routerLinkActive="active">Gifts</li>
             <li (click)="toGallery()" routerLinkActive="active">Gallery</li>
-            <li>
-              <a
-                target="_blank"
-                href="https://heyzine.com/flip-book/ddc8a47522.html"
-                >Open Programme</a
-              >
-            </li>
-            <!-- <li (click)="toggleMenu()">
-              <a href="https://fb.me/2b2uikmJyNI5eWc" routerLink="/contact">Livestream</a>
-            </li> -->
+            <li (click)="toColour()" routerLinkActive="active">Colour Theme</li>
           </ul>
         </nav>
       </div>
@@ -54,13 +49,13 @@
     <app-heropage></app-heropage>
   </section>
 
-  <section id="venue" class="venue__frame">
+  <!-- <section id="venue" class="venue__frame">
     <app-venue></app-venue>
-  </section>
-
-  <!-- <section id="count" class="weddingcount__frame">
-    <app-wedding-countdown></app-wedding-countdown>
   </section> -->
+
+  <section id="count" class="weddingcount__frame">
+    <app-wedding-countdown></app-wedding-countdown>
+  </section>
 
   <section id="story" class="story">
     <app-story></app-story>
@@ -74,7 +69,7 @@
     <app-gallery></app-gallery>
   </section>
 
-  <section id="colorcode" class="colorcode__frame">
+  <section id="colour" class="colorcode__frame">
     <app-colorcode></app-colorcode>
   </section>
 
